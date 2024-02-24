@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental</title>
+
+    <link rel="stylesheet" href="car_rental.css">
+    <link rel="stylesheet" href="car_rental_mediaqueries.css">
+</head>
+<body>
+    <div class="div-popup-signin">
+        <h3>Sign-In</h3>
+        <input type="text" class="input-style" placeholder="Username">
+        <input type="password" class="input-style" placeholder="Password">
+        <div>
+            <button class="btn-style btn-color-2">SUBMIT</button>
+            <button class="btn-style btn-color-1" id="btn-close-signin">CLOSE</button>
+        </div>
+    </div>
+    <div class="div-popup">
+        <h3>Register</h3>
+        <input type="text" class="input-style" placeholder="First Name">
+        <input type="text" class="input-style" placeholder="Last Lame">
+        <input type="text" class="input-style" placeholder="Email Address">
+        <div>
+            <button class="btn-style btn-color-2">SUBMIT</button>
+            <button class="btn-style btn-color-1" id="btn-close">CLOSE</button>
+        </div>
+    </div>
+
+    <nav id="nav-desktop">
+        <div class="div-logo"><span style="color: rgb(131, 60, 12);">CAR</span> Rental</div>
+
+        <div>
+            <ul class="nav-links">
+                <li><a href="#div-logo">Home</a></li>
+                <li><a href="#sec-about">About</a></li>
+                <li><a href="#sec-reviews">Reviews</a></li>
+                <li><a href="#sec-contact">Contact</a></li>
+            </ul>
+        </div>
+
+        <div>
+            <button class="btn-style btn-color-2" id="btn-signin">Sign-In</button>
+            <button class="btn-style btn-color-1" id="btn-register">Register</button>
+        </div>
+    </nav>
+
+    <nav id="nav-hamburger">
+        <div class="div-logo"><span style="color: rgb(131, 60, 12);">CAR</span> Rental</div>
+        <div class="div-hamburger-menu">
+            <div class="div-hamburger-icon">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <div class="div-menu-links">
+                <div>
+                    <li><a href="#div-logo">Home</a></li>
+                    <li><a href="#sec-about">About</a></li>
+                    <li><a href="#sec-reviews">Reviews</a></li>
+                    <li><a href="#sec-contact">Contact</a></li>
+                </div>
+
+                <div id="div-menu-btns">
+                    <button class="btn-style-menu btn-color-1" id="btn-signin-menu">Sign-In</button>
+                    <button class="btn-style-menu btn-color-2" id="btn-register-menu">Register</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- mobile view -->
+    <div id="div-home-car-mobile">
+        <img src="./car_assets/home-car-img.webp" alt="Home Car" id="img-car-home">
+    </div>
+
+    <div id="div-home">
+        <div>
+            <h3>Fasten your seatbelt</h3>
+            <h1>Spend <span style="color: rgb(131, 60, 12);">Less</span>, travel <span style="color: rgb(198, 89, 17);">more</span> with our car rental </h1>
+            <p style="font-size: 0.85rem; margin-bottom: 1rem;">price range for everyone, on the go booking, quality cars. If that doesn't turn your engine on, I don't know what. So what are you waiting for? buckle up!</p>
+            <button class="btn-style btn-color-2" id="btn-book">Book Ride</button>
+            <button class="btn-style btn-color-1" id="btn-learn">Learn More</button>
+        </div>
+
+        <div id="div-home-car">
+            <img src="./car_assets/home-car-img.webp" alt="Home Car">
+        </div>
+    </div>
+
+    <section id="sec-book">
+        <h2 id="h-book">Book your car</h2>
+        <div id="div-book">
+            <div>
+                <div class="img-lbl">
+                    <img src="./car_assets/car-icon.png" alt="Car Icon" class="img-icon">
+                    <label for="sel-cartype">Car Type</label>
+                </div>
+                <select name="" id="sel-cartype" class="input-style">
+                    <option>Select Car Type</option>
+                    <option>Mini</option>
+                    <option>Economy</option>
+                    <option>Intermediate</optioni>
+                </select>
+            </div>
+
+            <div>
+                <div class="img-lbl">
+                    <img src="./car_assets/location-icon.png" alt="Location Icon" class="img-icon">
+                    <label for="sel-pickup">Pick UP</label>
+                </div>
+                <select name="" id="sel-pickup" class="input-style">
+                    <option>Select Pick Up Location</option>
+                    <option>Mandaue</option>
+                    <option>Ayala</option>
+                    <option>Lapu-Lapu</option>
+                    <option>Mabolo</option>
+                </select>
+            </div>
+
+            <div>
+                <div class="img-lbl">
+                    <img src="./car_assets/location-icon.png" alt="Location Icon" class="img-icon">
+                    <label for="sel-dropoff">Drop OFF</label>
+                </div>
+                <select name="" id="sel-dropoff" class="input-style">
+                    <option>Select Drop Off Location</option>
+                    <option>Mandaue</option>
+                    <option>Ayala</option>
+                    <option>Lapu-Lapu</option>
+                    <option>Mabolo</option>
+                </select>
+            </div>
+
+            <div>
+                <div class="img-lbl">
+                    <img src="./car_assets/calendar-icon.png" alt="Calendar Icon" class="img-icon">
+                    <label for="in-pickdate">Pick UP</label>
+                </div>
+                <input type="date" id="in-pickdate" class="input-style">
+            </div>
+
+            <div>
+                <div class="img-lbl">
+                    <img src="./car_assets/calendar-icon.png" alt="Calendar Icon" class="img-icon">
+                    <label for="sel-cartype">Drop OFF</label>
+                </div>
+                <input type="date" id="in-pickdrop" class="input-style">
+            </div>
+        </div>
+    </section>
+
+    <section id="sec-fleet">
+        <div style="text-align: center; margin-bottom: 2rem;">
+            <h3>Car Models</h3>
+            <h2>Welcome To Our Rental Fleet</h2>
+            <p>Choose the car that you would like to rent for your journey</p>
+        </div>
+
+        <!-- mobile view -->
+        <div id="div-fleet-img-mobile">
+            <img src="./car_assets/citroen.jpg" alt="Citroen" class="img-car-display">
+        </div>
+
+        <div id="div-fleet">
+            <div id="div-model">
+                <div class="model-style" id="div-citroen">Citroen C3</div>
+                <div class="model-style" id="div-peugeot">Peugeot 108</div>
+                <div class="model-style" id="div-toyota">Toyota Corolla</div>
+            </div>
+
+            <div id="div-fleet-img-desktop">
+                <img src="./car_assets/citroen.jpg" alt="Citroen" class="img-car-display" id="img-car-display-pc">
+            </div>
+
+            <div id="div-table">
+                    <table border="1" style="border-collapse: collapse; text-align: center;">
+                        <tbody id="tbl-tbody">
+                            <tr>
+                                <th colspan="2">₱1,000 / Day</th>
+                            </tr>
+                            <tr>
+                                <td>Model</td>
+                                <td>Citroen</td>
+                            </tr>
+                            <tr>
+                                <td>Seats</td>
+                                <td>5/5</td>
+                            </tr>
+                            <tr>
+                                <td>Doors</td>
+                                <td>5/5</td>
+                            </tr>
+                            <tr>
+                                <td>AC</td>
+                                <td>Yes</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    
+                    <button id="btn-reserve" type="button" class="btn-style btn-color-1">RESERVE</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="sec-about">
+        <div id="div-about">
+            <h1>Spend <span style="color: rgb(131, 60, 12);">Less</span>, travel <span style="color: rgb(198, 89, 17);">more</span> with our car rental!</h1>
+            <p><span style="color: red;">#1</span> in Car Rental Business, Services Awards <span style="color: red;">10th time</span> Nominee, Best Cars Awards <span style="color: red;">2024</span></p>
+        </div>
+
+        <div id="div-about-cars">
+            <div id="img-about-cars">
+                <img src="./car_assets/cars-about.png" alt="About Cars" id="img-about-cars-banner">
+            </div>
+
+            <div id="div-about-container-deals">
+                <div id="div-we-offer">
+                    <h3>Why Choose Us</h3>
+                    <h2>Best Offers Available For You</h2>
+                    <p>
+                        Hi there, we noticed you had not signed up yet for our Car Rental Group.<br> If you sign up before Thursday the 15th you can save P150 on your reservation price!<br> You can sign up here: www.carrental.com
+                    </p>
+                </div>
+                    
+                <div id="div-about-deals">
+                    <div class="div-about-feats">
+                        <div class="div-img-icon">
+                            <img src="./car_assets/about-car-icon.png" alt="About Car Icon" class="img-about-icon">
+                        </div>
+                        <div>
+                            <h4>Cross Country Drive</h4>
+                            <p>traveling from one side of a country to the other.<br> traveling all over a country</p>
+                        </div>
+                    </div>
+                    
+                    <div class="div-about-feats">
+                        <div class="div-img-icon">
+                            <img src="./car_assets/about-price-icon.png" alt="About Price Icon" class="img-about-icon">
+                        </div>
+                        <div>
+                            <h4>All Inclusive Pricing</h4>
+                            <p>across-the-board, all-embracing, all-encompassing, blanket,<br> broad, encompassing, extensive, panoptic,<br> sweeping, wide comprehensive, overarching.<br> including all or everything.</p>
+                        </div>
+                    </div>
+
+                    <div class="div-about-feats">
+                        <div class="div-img-icon">
+                            <img src="./car_assets/about-hidden-icon.png" alt="About Hidden Icon" class="img-about-icon">
+                        </div>
+                        <div>
+                            <h4>No Hidden Charges</h4>
+                            <p>No hidden costs means that the Price quoted is the total price to the Customer<br> as quoted in any quotation, proposal, tender or other document</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sec-reviews">
+        <div style="text-align: center; margin-bottom: 2rem; font-size: 0.85rem;">
+            <h3>Preach from the Choir</h3>
+            <h2>Customers' Testimonials</h2>
+            <p>Here are some reviews from our loyal and appreciated customers.
+            <br>Whom experienced our quality service and quality cars.<br>
+            And to share their experince with you:</p>
+        </div>
+
+        <div id="div-reviews">
+            <div class="div-comments">
+                <p class="p-comment">
+                    "Twas' the best ride I've ever had and this is coming from a married woman.. Starfish, not a woman. Anyways, it is so easy to book and the prices are incredibly affordable!"
+                </p>
+
+                <div class="div-rev-profile">
+                    <img src="./car_assets/patrick.webp" alt="Patrick Star" class="img-reviews">
+                    <h3>Patrick Star</h3>
+                </div>
+                <p>Bikini Bottom</p>
+            </div>
+
+            <div class="div-comments">
+                <p class="p-comment">
+                    "I don't even know why I'm here. I only know how to pilot ships not boats but ships, there's a huge difference there. But I booked anyway, wouldn't turn a blind eye to a shiny offer ay mate! Also, AC! They have AC! Insane right!? right!?"
+                </p>
+
+                <div class="div-rev-profile">
+                    <img src="./car_assets/jack.jpg" alt="Jack Sparrow" class="img-reviews">
+                    <h3>Jack Sparrow</h3>
+                </div>
+                <p>Carribean</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="sec-contact">
+        <div id="div-car-app">
+            <div id="div-app-store">
+                <div>
+                    <h1>
+                        Download The App Now
+                    </h1>
+                </div>
+    
+                <div>
+                    <p>This app is now available in both app store and google store. intall it for free and start booking your rides. You can get the most handheld with this app. Try now!</p>  
+                </div>
+                    
+                    
+                <!-- MOBILE VIEW -->
+                <div >
+                    <img src="./car_assets/car-app.jpg" alt="Car App" id="div-app-mobile">
+                </div>
+
+
+                <div id="div-app-img">
+                    <div>
+                        <img src="./car_assets/google-store.png" alt="Google Store" class="img-store">
+                    </div>
+                    <div>
+                        <img src="./car_assets/app-store.png" alt="App Store" class="img-store">
+                    </div>
+                </div>
+            </div>
+
+            <div id="div-app-desktop">
+                <img src="./car_assets/car-app.jpg" alt="Car App">
+            </div>
+        </div>
+
+        <div id="div-contact">
+            <div class="div-contact-panel" id="div-contact-id">
+                <p><span style="font-weight: bold;">CAR</span> Rental</p>
+                <p id="p-offer">We offer services like no ever<br>
+                Spend your money more on your destinations rather than the vehicles<br>
+                Prices that fits your comfort while delivering quality services
+                </p>
+                <p class="p-info-general">(123) 456 - 7890</p>
+                <p class="p-info-general">carrental@gmail.com</p>
+            </div>
+
+            <div class="div-contact-panel" id="div-branch-id">
+                <h3>COMPANY</h3>
+                <p class="p-info-general">Philippines</p>
+                <p class="p-info-general">Careers</p>
+                <p class="p-info-general">Mobile</p>
+                <p class="p-info-general">Blog</p>
+            </div>
+
+            <div class="div-contact-panel" id="div-sched-id">
+                <h3>WORKING HOURS</h3>
+                <p class="p-info-general">Mon - Fri 8:00AM - 9:00AM</p>
+                <p class="p-info-general">Saturdays 10:00AM - 7PM</p>
+                <p class="p-info-general">Sundays Closed</p>
+            </div>
+
+            <div class="div-contact-panel" id="div-subs-id">
+                <h3>SUBSCRIPTION</h3>
+                <p>Subscribe your email address for <br>
+                latest news and updates.
+                </p>
+                <input type="text" placeholder="Enter Email Address" class="input-style input-email">
+                <button class="btn-style-sub btn-color-1">SUBMIT</button>
+            </div>
+        </div>
+    </section>
+
+    <script src="car_rental.js"></script>
+</body>
+</html>
